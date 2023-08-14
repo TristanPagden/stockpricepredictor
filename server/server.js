@@ -23,8 +23,8 @@ server.use(cors({
     origin: ['http://localhost:3000']
 }));
 
-server.get('/api/train', (req, res) => {
-    barGetter.barMaker('SPY', 730, res).then((data) => {
+server.get('/api/train', (req) => {
+    barGetter.serverBarMaker('SPY', 730).then((data) => {
         bars = data;
         model.trainModel(bars);
     }).catch(e => {
