@@ -36,15 +36,13 @@ function createDataset (bars, callback){
     callback({train_x, train_y, test_x, test_y, transformedBars});
 }
 
-model.add(tf.layers.gru({units: 150, returnSequences: true, inputShape : [60,1]}));
+model.add(tf.layers.gru({units: 50, returnSequences: true, inputShape : [60,1]}));
 model.add(tf.layers.dropout(0.2));
-model.add(tf.layers.gru({units: 150, returnSequences: true}));
+model.add(tf.layers.gru({units: 50, returnSequences: true}));
 model.add(tf.layers.dropout(0.2));
-model.add(tf.layers.gru({units: 150, returnSequences: true}));
+model.add(tf.layers.gru({units: 50, returnSequences: true}));
 model.add(tf.layers.dropout(0.2));
-model.add(tf.layers.gru({units: 150, returnSequences: true}));
-model.add(tf.layers.dropout(0.2));
-model.add(tf.layers.gru({units: 150}));
+model.add(tf.layers.gru({units: 50}));
 model.add(tf.layers.dropout(0.2));
 model.add(tf.layers.dense({units: 1}));
 
