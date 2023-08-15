@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import Particles from 'react-tsparticles'
+import Particles from 'react-particles'
 import particlesConfig from '@/components/config/particlesConfig'
 import { loadFull } from 'tsparticles'
 
