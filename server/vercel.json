@@ -5,5 +5,10 @@
     ],
     "routes": [
         {"src": "/(.*)", "dest": "/"}
-    ]
+    ],
+    "functions": {
+        "/**/*": {
+          "excludeFiles": "functions/**/*"
+        }
+      }
 }
