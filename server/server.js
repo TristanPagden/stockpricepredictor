@@ -27,6 +27,7 @@ server.use(cors({
 }));
 
 server.get('/', (req, res) => {
+    console.log('Got a request');
     res.json('Success');
 });
 
