@@ -157,7 +157,7 @@ export default function Predict() {
     );
 
       // Navigate to [predict]
-    router.push(`https://stockpricepredictor.onrender.com/predict/`)
+    router.push(`https://stockpricepredictor.vercel.app/predict/`)
   }
 
   const handleChange = (e) => {
