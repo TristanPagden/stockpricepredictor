@@ -26,6 +26,10 @@ server.use(cors({
 
 }));
 
+server.get('/', (req, res) => {
+    res.json('Success');
+});
+
 server.get('/api/train', (req) => {
     barGetter.serverBarMaker('SPY', 730).then((data) => {
         bars = data;

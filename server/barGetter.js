@@ -5,7 +5,7 @@ async function barMaker(symbol, time, res){
   currentTime = Date.now();
   var startTime = currentTime - (time * 86400000);
   let data = await rest.stocks.aggregates(symbol, 1, "day", startTime, currentTime).catch(e => {
-    res.redirect('http://localhost:3000/predict')
+    res.redirect('https://stockpricepredictor.vercel.app/predict')
     console.error('An error happened:', e);
   });
   bars = data.results;
