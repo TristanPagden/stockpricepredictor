@@ -121,7 +121,7 @@ export default function Predict() {
     const { ticker, time } = data
 
     // Send data to API route 
-    const res = await fetch('https://stockpricepredictor-api.vercel.app/api/predict', {
+    const res = await fetch('https://stockpricepredictor-api.onrender.com/api/predict', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -157,7 +157,7 @@ export default function Predict() {
     );
 
       // Navigate to [predict]
-    router.push(`https://stockpricepredictor.vercel.app/predict/`)
+    router.push(`https://stockpricepredictor.onrender.com/predict/`)
   }
 
   const handleChange = (e) => {
