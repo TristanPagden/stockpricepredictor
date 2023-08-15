@@ -24,7 +24,8 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
+
+export const chartOptions = {
   maintainAspectRatio: true,
   responsive: true,
   scales: {
@@ -182,7 +183,7 @@ export default function Predict() {
       </div>
       <div className='flex mx-auto items-center max-w-5xl w-3/4 overflow-x-scroll'>
         <div className='text-lighter text-lg bg-darker font-links font-normal m-auto py-3 rounded-xl px-5 shadow-xl mt-10 w-full'>
-          <Line options={options} data={chartData} />
+          <Line options={chartOptions} data={chartData} />
         </div>
       </div>
     </div>

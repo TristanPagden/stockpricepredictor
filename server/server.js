@@ -20,7 +20,10 @@ const server = express()
 server.use(bodyParser.urlencoded({ extended: true }))
 server.use(bodyParser.json())
 server.use(cors({
-    origin: ['http://localhost:3000']
+    origin: ['https://stockpricepredictor.vercel.app'],
+    methods: ['GET', 'POST'],
+    credentials: true
+
 }));
 
 server.get('/api/train', (req) => {

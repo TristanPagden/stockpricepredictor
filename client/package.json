@@ -11,8 +11,10 @@
   "dependencies": {
     "autoprefixer": "10.4.14",
     "chart.js": "^4.3.3",
+    "chartjs-plugin-zoom": "^2.0.1",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.13",
+    "hammerjs": "^2.0.8",
     "next": "13.4.13",
     "postcss": "8.4.27",
     "react": "18.2.0",
